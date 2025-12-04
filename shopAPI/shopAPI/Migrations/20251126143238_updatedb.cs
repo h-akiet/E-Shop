@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ShopApi.Migrations
 {
     /// <inheritdoc />
-    public partial class updatedb : Migration
+    public partial class Updatedb : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

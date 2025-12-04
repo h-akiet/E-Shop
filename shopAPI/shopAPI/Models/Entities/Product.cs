@@ -13,7 +13,7 @@ namespace ShopApi.Models.Entities
         public int ProductId { get; set; }
         [Required]
         [Column(TypeName = "nvarchar(200)")]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
         [Required]
         [Column(TypeName = "decimal(18,2)")]
         public decimal Price { get; set; }
@@ -24,6 +24,8 @@ namespace ShopApi.Models.Entities
         [ForeignKey("CategoryId")]
         public int CategoryId { get; set; }
 
+
+        public bool IsPhysical { get; set; }
 
 
     }

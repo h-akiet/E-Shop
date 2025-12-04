@@ -13,7 +13,7 @@ namespace ShopApi.Migrations
 {
     [DbContext(typeof(ShopContext))]
     [Migration("20251126143238_updatedb")]
-    partial class updatedb
+    partial class Updatedb
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

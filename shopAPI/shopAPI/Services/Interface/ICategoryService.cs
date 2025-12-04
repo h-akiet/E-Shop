@@ -5,7 +5,7 @@ namespace ShopApi.Services.Interface
     public interface ICategoryService
     {
         public List<CategoryModel> GetCategories();
-        public CategoryModel GetCategoryById(int id);
+        public CategoryModel? GetCategoryById(int id);
         public void AddCategory(CategoryModel category);
 
         public void UpdateCategory(CategoryModel category);

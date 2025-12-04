@@ -9,7 +9,7 @@ namespace ShopApi.Models.Entities
         [Key]
         public int CategoryId { get; set; }
         [Required]
-        public string Name { get; set; }
+        public required string Name { get; set; }
         public string Description { get; set; } = null!;
 
         

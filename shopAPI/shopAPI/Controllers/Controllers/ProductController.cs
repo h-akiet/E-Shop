@@ -20,7 +20,7 @@ namespace ShopApi.Controllers.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAll()
+        public IActionResult getProduct()
         {
             try
             {
@@ -39,14 +39,14 @@ namespace ShopApi.Controllers.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetById(int id)
+        public IActionResult getProductById(int id)
         {
             var product = _productService.GetProduct(id);
             return Ok(product);
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public IActionResult deleteProduct(int id)
         {
             var product = _productService.GetProduct(id);
             if (product == null)
@@ -58,20 +58,20 @@ namespace ShopApi.Controllers.Controllers
         }
 
         [HttpGet("search")]
-        public IActionResult GetByName([FromQuery] string? name)
+        public IActionResult getProductByName([FromQuery] string name)
         {
             var products = _productService.GetProducts(name);
             return Ok(products);
         }
         [HttpPost]
-        public IActionResult Create(Product product)
+        public IActionResult createProduct(Product product)
         {
             _productService.AddProduct(product);
-            return CreatedAtAction(nameof(GetById), new { id = product.ProductId }, product);
+            return CreatedAtAction(nameof(getProductById), new { id = product.ProductId }, product);
         }
 
         [HttpPut("{id}")]
-        public IActionResult Update(int id, Product product)
+        public IActionResult updateProduct(int id, Product product)
         {
             if (id != product.ProductId)
             {

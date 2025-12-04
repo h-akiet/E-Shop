@@ -29,7 +29,7 @@ namespace ShopApi.Data.Repositories
             _context.SaveChanges();
         }
 
-        public Product GetProductById(int id)
+        public Product? GetProductById(int id)
         {
             return _context.Products.Find(id);
         }

@@ -47,12 +47,11 @@ namespace ShopApi.Data.Repositories
                     UserId = o.UserId
 
                 }).ToList();
-#pragma warning restore CS8602 // Dereference of a possibly null reference.
-            return dtos;
+                return dtos;
 
          }
 
-        public OrderModel GetOrderById(int id)
+        public OrderModel? GetOrderById(int id)
         {
             var model = _context.Orders
                 .Where(o => o.OrderId == id)

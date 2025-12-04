@@ -7,16 +7,12 @@ using ShopApi.Services.Interface;
 
 namespace ShopApi.Controllers.Controllers
 {
-    [Route("api/Categories")]
+    [Route("api/categories")]
     [ApiController]
-    public class CategoryController : ControllerBase
+    public class CategoryController(ICategoryService categoryService) : ControllerBase
     {
-        private readonly ICategoryService _categoryService;
-        
-        public CategoryController(ICategoryService categoryService)
-        {
-            _categoryService = categoryService;
-        }
+        private readonly ICategoryService _categoryService = categoryService;
+
         [HttpGet]
         public IActionResult GetCategories()
         {
@@ -33,7 +29,7 @@ namespace ShopApi.Controllers.Controllers
         [HttpGet("{id}")]
         public IActionResult GetCategoryById(int id)
         {
-            CategoryModel category = _categoryService.GetCategoryById(id);
+            CategoryModel? category = _categoryService.GetCategoryById(id);
             if (category == null)
             {
                 return NotFound();

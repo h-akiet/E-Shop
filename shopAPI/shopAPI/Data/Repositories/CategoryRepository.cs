@@ -29,7 +29,7 @@ namespace ShopApi.Data.Repositories
             return _context.Categories.ToList();
         }
 
-        public Category GetCategoryById(int id)
+        public Category? GetCategoryById(int id)
         {
             return _context.Categories.Find(id);
         }

@@ -13,7 +13,7 @@ namespace ShopApi.Controllers.Controllers
             _orderService = orderService;
         }
         [HttpGet]
-        public IActionResult GetByUserId([FromQuery] int? id)
+        public IActionResult GetByUserId([FromQuery] int id)
         {
             var orders = _orderService.GetByUserId((int)id);
             return Ok(orders);
@@ -36,6 +36,7 @@ namespace ShopApi.Controllers.Controllers
             {
                 return NotFound();
             }
+    
             return Ok(order);
         }
     }
