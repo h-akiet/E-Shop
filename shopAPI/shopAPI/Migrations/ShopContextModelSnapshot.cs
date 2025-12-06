@@ -15,14 +15,14 @@ namespace ShopApi.Migrations
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
-#pragma warning disable 612, 618
+
             modelBuilder
                 .HasAnnotation("ProductVersion", "9.0.1")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ShopApi.Models.Category", b =>
+            modelBuilder.Entity("ShopApi.Models.Entities.Category", b =>
                 {
                     b.Property<int>("CategoryId")
                         .ValueGeneratedOnAdd()
@@ -43,7 +43,7 @@ namespace ShopApi.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("ShopApi.Models.Order", b =>
+            modelBuilder.Entity("ShopApi.Models.Entities.Order", b =>
                 {
                     b.Property<int>("OrderId")
                         .ValueGeneratedOnAdd()
@@ -62,18 +62,16 @@ namespace ShopApi.Migrations
 
                     b.HasKey("OrderId");
 
-                    b.HasIndex("UserId");
-
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("ShopApi.Models.OrderItem", b =>
+            modelBuilder.Entity("ShopApi.Models.Entities.OrderItem", b =>
                 {
-                    b.Property<int>("OderItemId")
+                    b.Property<int>("OrderItemId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OderItemId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderItemId"));
 
                     b.Property<int>("OrderId")
                         .HasColumnType("int");
@@ -87,16 +85,12 @@ namespace ShopApi.Migrations
                     b.Property<decimal>("UnitPrice")
                         .HasColumnType("decimal(18,2)");
 
-                    b.HasKey("OderItemId");
+                    b.HasKey("OrderItemId");
 
-                    b.HasIndex("OrderId");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("OderItems");
+                    b.ToTable("OrderItems");
                 });
 
-            modelBuilder.Entity("ShopApi.Models.Product", b =>
+            modelBuilder.Entity("ShopApi.Models.Entities.Product", b =>
                 {
                     b.Property<int>("ProductId")
                         .ValueGeneratedOnAdd()
@@ -106,6 +100,9 @@ namespace ShopApi.Migrations
 
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
+
+                    b.Property<bool>("IsPhysical")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -119,12 +116,10 @@ namespace ShopApi.Migrations
 
                     b.HasKey("ProductId");
 
-                    b.HasIndex("CategoryId");
-
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("ShopApi.Models.User", b =>
+            modelBuilder.Entity("ShopApi.Models.Entities.User", b =>
                 {
                     b.Property<int>("UserId")
                         .ValueGeneratedOnAdd()
@@ -153,47 +148,6 @@ namespace ShopApi.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("ShopApi.Models.Order", b =>
-                {
-                    b.HasOne("ShopApi.Models.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("ShopApi.Models.OrderItem", b =>
-                {
-                    b.HasOne("ShopApi.Models.Order", "Order")
-                        .WithMany()
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ShopApi.Models.Product", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Order");
-
-                    b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("ShopApi.Models.Product", b =>
-                {
-                    b.HasOne("ShopApi.Models.Category", "Category")
-                        .WithMany()
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Category");
-                });
-#pragma warning restore 612, 618
         }
     }
 }

@@ -1,43 +1,49 @@
-﻿using Microsoft.EntityFrameworkCore;
-using ShopApi.Data.Repositories.Interfaces;
-using ShopApi.Models.Entities;
-
-namespace ShopApi.Data.Repositories
+﻿namespace ShopApi.Data.Repositories
 {
+    using ShopApi.Data.Repositories.Interfaces;
+    using ShopApi.Models.Entities;
+
     public class CategoryRepository : ICategoryRepository
     {
-        private ShopContext _context;
+        private ShopContext context;
 
         public CategoryRepository(ShopContext context)
         {
-            _context = context;
+            this.context = context;
         }
 
         public void AddCategory(Category category)
         {
-            _context.Categories.Add(category);
-            _context.SaveChanges();
+            this.context.Categories.Add(category);
+            context.SaveChanges();
         }
 
-        public void DeleteCategory(Category category)
+        public bool DeleteCategory(Category category)
         {
-            _context.Categories.Remove(category);
+            if (context.Products.Any(p => p.CategoryId == category.CategoryId))
+            {
+                return false;
+            }
+
+            context.Categories.Remove(category);
+            context.SaveChanges();
+            return true;
         }
 
         public List<Category> GetAll()
         {
-            return _context.Categories.ToList();
+            return context.Categories.ToList();
         }
 
         public Category? GetCategoryById(int id)
         {
-            return _context.Categories.Find(id);
+            return context.Categories.Find(id);
         }
 
         public void UpdateCategory(Category category)
         {
-            _context.Categories.Update(category);
-            _context.SaveChanges();
+            context.Categories.Update(category);
+            context.SaveChanges();
         }
     }
 }
