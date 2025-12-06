@@ -1,9 +1,9 @@
-﻿using ShopApi.Models.Entities;
-namespace ShopApi.Models.ApiModels
+﻿namespace ShopApi.Models.ApiModels
 {
+    using ShopApi.Models.Entities;
+
     public class ProductModel : Product
     {
-        public string? DiscountedName { get; set; }
-       
+        public string Type { get; set; } = null!;
     }
 }

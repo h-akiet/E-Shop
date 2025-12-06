@@ -1,9 +1,12 @@
-﻿using ShopApi.Models.Entities;
-namespace ShopApi.Models.ApiModels
+﻿namespace ShopApi.Models.ApiModels
 {
+    using ShopApi.Models.Entities;
+
     public class CategoryModel : Category
     {
-        public int ProductCount { get; set; }
+        public CategoryModel()
+        {
+        }
 
         public CategoryModel(Category category)
         {
@@ -12,20 +15,17 @@ namespace ShopApi.Models.ApiModels
             this.Description = category.Description;
             this.ProductCount = 0;
         }
-        public CategoryModel()
-        {
-        }
+
+        public int ProductCount { get; set; }
+
         public Category ConvertCategory()
         {
             return new Category
             {
                 CategoryId = this.CategoryId,
                 Name = this.Name,
-                Description = this.Description
+                Description = this.Description,
             };
-
         }
-        
-
     }
 }

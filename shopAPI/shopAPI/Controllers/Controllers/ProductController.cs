@@ -1,11 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using ShopApi.Models.Entities;
-using ShopApi.Services.Interface;
-using Microsoft.Extensions.Logging;
-using System.Net.NetworkInformation;
-
-namespace ShopApi.Controllers.Controllers
+﻿namespace ShopApi.Controllers.Controllers
 {
+    using Microsoft.AspNetCore.Mvc;
+    using ShopApi.Models.Entities;
+    using ShopApi.Services.Interface;
+
     [Route("/api/products")]
     [ApiController]
     public class ProductController : Controller
@@ -20,7 +18,7 @@ namespace ShopApi.Controllers.Controllers
         }
 
         [HttpGet]
-        public IActionResult getProduct()
+        public IActionResult GetProduct()
         {
             try
             {
@@ -32,51 +30,61 @@ namespace ShopApi.Controllers.Controllers
                 return StatusCode(500, new
                 {
                     Message = ex.Message,
-                    StackTrace = ex.StackTrace, 
-                    InnerException = ex.InnerException?.Message 
+                    StackTrace = ex.StackTrace,
+                    InnerException = ex.InnerException?.Message,
                 });
             }
         }
 
         [HttpGet("{id}")]
-        public IActionResult getProductById(int id)
+        public IActionResult GetProductById(int id)
         {
             var product = _productService.GetProduct(id);
             return Ok(product);
         }
 
         [HttpDelete("{id}")]
-        public IActionResult deleteProduct(int id)
+        public IActionResult DeleteProduct(int id)
         {
             var product = _productService.GetProduct(id);
             if (product == null)
             {
                 return NotFound();
             }
-            _productService.DeleteProduct(product);
-            return NoContent();
+
+            var success = _productService.DeleteProduct(product);
+            if (success)
+            {
+                return Content("Success delete");
+            }
+            else
+            {
+                return StatusCode(500, "Failed to delete the product.");
+            }
         }
 
         [HttpGet("search")]
-        public IActionResult getProductByName([FromQuery] string name)
+        public IActionResult GetProductByName([FromQuery] string name)
         {
             var products = _productService.GetProducts(name);
             return Ok(products);
         }
+
         [HttpPost]
-        public IActionResult createProduct(Product product)
+        public IActionResult CreateProduct(Product product)
         {
             _productService.AddProduct(product);
-            return CreatedAtAction(nameof(getProductById), new { id = product.ProductId }, product);
+            return CreatedAtAction(nameof(GetProductById), new { id = product.ProductId }, product);
         }
 
         [HttpPut("{id}")]
-        public IActionResult updateProduct(int id, Product product)
+        public IActionResult UpdateProduct(int id, Product product)
         {
             if (id != product.ProductId)
             {
                 return BadRequest();
             }
+
             _productService.UpdateProduct(product);
             return NoContent();
         }

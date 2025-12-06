@@ -1,12 +1,13 @@
-﻿using ShopApi.Models.Entities;
-
-namespace ShopApi.Models.ApiModels
+﻿namespace ShopApi.Models.ApiModels
 {
+    using ShopApi.Models.Entities;
+
     public class OrderModel : Order
     {
-
         public string? Fullname { get; set; } = null!;
+
         public int Quantity { get; set; }
-        public List<String> Products { get; set; } = new List<String>();
+
+        public List<string> Products { get; set; } = new List<string>();
     }
 }

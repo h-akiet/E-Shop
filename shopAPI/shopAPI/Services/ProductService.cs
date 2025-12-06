@@ -1,31 +1,38 @@
-﻿using System.Collections.Generic;
-using ShopApi.Services.Interface;
-using ShopApi.Data.Repositories;
-using ShopApi.Data.Repositories.Interfaces;
-using ShopApi.Models.Entities;
-
-
-namespace ShopApi.Services
+﻿namespace ShopApi.Services
 {
-    public class ProductService :  IProductService
+    using System.Collections.Generic;
+    using ShopApi.Data.Repositories.Interfaces;
+    using ShopApi.Models.Entities;
+    using ShopApi.Services.Interface;
+
+    public class ProductService : IProductService
     {
         private readonly IProductRepository _repository;
-        public ProductService (IProductRepository repository){
+
+        public ProductService(IProductRepository repository)
+        {
             _repository = repository;
         }
+
         public void AddProduct(Product product)
         {
             _repository.AddProduct(product);
         }
 
-        public void DeleteProduct(Product product)
+        public bool DeleteProduct(Product product)
         {
-            _repository.DeleteProduct(product);
+            return _repository.DeleteProduct(product);
         }
 
         public Product GetProduct(int productId)
         {
-            return _repository.GetProductById(productId);
+            var product = _repository.GetProductById(productId);
+            if (product == null)
+            {
+                throw new KeyNotFoundException($"Product with ID {productId} not found.");
+            }
+
+            return product;
         }
 
         public List<Product> GetProducts()
@@ -37,10 +44,10 @@ namespace ShopApi.Services
         {
             _repository.UpdateProduct(product);
         }
+
         public List<Product> GetProducts(string name)
         {
             return _repository.GetProductByName(name);
-
         }
     }
 }

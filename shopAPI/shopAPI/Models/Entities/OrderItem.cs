@@ -1,17 +1,17 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace ShopApi.Models.Entities
+﻿namespace ShopApi.Models.Entities
 {
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+
     [Table("OrderItems")]
     public class OrderItem
     {
         [Key]
-        public int OderItemId { get; set; }
+        public int OrderItemId { get; set; }
+
         [Required]
         [ForeignKey("OrderId")]
         public int OrderId { get; set; }
-
 
         [Required]
         [ForeignKey("ProductId")]
@@ -19,6 +19,7 @@ namespace ShopApi.Models.Entities
 
         [Required]
         public int Quantity { get; set; }
+
         [Required]
         [Column(TypeName = "decimal(18,2)")]
         public decimal UnitPrice { get; set; }
