@@ -66,8 +66,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 11,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
@@ -105,6 +109,10 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "CaculateService.cs",
@@ -112,7 +120,7 @@
               "RelativeDocumentMoniker": "shopAPI\\Services\\CaculateService.cs",
               "ToolTip": "E:\\intern\\E-Shop\\shopAPI\\shopAPI\\Services\\CaculateService.cs",
               "RelativeToolTip": "shopAPI\\Services\\CaculateService.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAqwEEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-06T16:44:16.517Z",
               "EditorCaption": ""
@@ -125,10 +133,9 @@
               "RelativeDocumentMoniker": "shopAPI\\Data\\ShopContext.cs",
               "ToolTip": "E:\\intern\\E-Shop\\shopAPI\\shopAPI\\Data\\ShopContext.cs",
               "RelativeToolTip": "shopAPI\\Data\\ShopContext.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAuwBQAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAABAwBQAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T16:40:05.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T16:40:05.87Z"
             },
             {
               "$type": "Document",
@@ -140,8 +147,7 @@
               "RelativeToolTip": "shopAPI\\Controllers\\Controllers\\ProductController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T16:38:23.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T16:38:23.89Z"
             },
             {
               "$type": "Document",
@@ -153,8 +159,7 @@
               "RelativeToolTip": "shopAPI\\Data\\Repositories\\Interfaces\\ICategoryRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T09:45:28.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T09:45:28.249Z"
             },
             {
               "$type": "Document",
@@ -166,8 +171,7 @@
               "RelativeToolTip": "shopAPI\\Models\\Entities\\Customer.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T09:02:00.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T09:02:00.821Z"
             },
             {
               "$type": "Document",
@@ -179,8 +183,7 @@
               "RelativeToolTip": "shopAPI\\Models\\Entities\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T07:34:44.457Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T07:34:44.457Z"
             },
             {
               "$type": "Document",
@@ -192,8 +195,7 @@
               "RelativeToolTip": "shopAPI\\Controllers\\Controllers\\OrderController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T15:26:07.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T15:26:07.158Z"
             },
             {
               "$type": "Document",
@@ -205,8 +207,7 @@
               "RelativeToolTip": "shopAPI\\Data\\Repositories\\OrderRepository.cs",
               "ViewState": "AgIAACQAAAAAAAAAAIA9wDIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T16:01:56.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T16:01:56.46Z"
             },
             {
               "$type": "Document",
@@ -218,8 +219,7 @@
               "RelativeToolTip": "shopAPI\\Models\\ApiModels\\ProductModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T07:39:41.734Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T07:39:41.734Z"
             },
             {
               "$type": "Document",
@@ -231,8 +231,7 @@
               "RelativeToolTip": "shopAPI\\Data\\Repositories\\OrderItemRepository.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAIBAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T16:22:03.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T16:22:03.504Z"
             },
             {
               "$type": "Document",
@@ -244,8 +243,7 @@
               "RelativeToolTip": "shopAPI\\Data\\Repositories\\CategoryRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T16:01:45.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T16:01:45.437Z"
             },
             {
               "$type": "Document",
@@ -257,8 +255,7 @@
               "RelativeToolTip": "shopAPI\\Services\\Interface\\IProductService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T05:59:55.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T05:59:55.181Z"
             },
             {
               "$type": "Document",
@@ -270,8 +267,7 @@
               "RelativeToolTip": ".editorconfig",
               "ViewState": "AgIAAMEAAAAAAAAAAAAAAPoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-06T15:03:44.127Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T15:03:44.127Z"
             },
             {
               "$type": "Document",
@@ -283,8 +279,7 @@
               "RelativeToolTip": "shopAPI\\Services\\Interface\\IServicelifetime.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T09:04:06.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T09:04:06.729Z"
             }
           ]
         }
