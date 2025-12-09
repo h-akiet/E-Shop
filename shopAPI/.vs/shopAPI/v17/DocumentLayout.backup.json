@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "E:\\intern\\E-Shop\\shopAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{583A53D1-017C-40A6-8C4C-6FBBFBAF19A7}|ShopApi\\ShopApi.csproj|e:\\intern\\e-shop\\shopapi\\shopapi\\services\\caculateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{583A53D1-017C-40A6-8C4C-6FBBFBAF19A7}|ShopApi\\ShopApi.csproj|solutionrelative:shopapi\\services\\caculateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{583A53D1-017C-40A6-8C4C-6FBBFBAF19A7}|ShopApi\\ShopApi.csproj|e:\\intern\\e-shop\\shopapi\\shopapi\\data\\shopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{583A53D1-017C-40A6-8C4C-6FBBFBAF19A7}|ShopApi\\ShopApi.csproj|solutionrelative:shopapi\\data\\shopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -107,31 +103,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CaculateService.cs",
-              "DocumentMoniker": "E:\\intern\\E-Shop\\shopAPI\\shopAPI\\Services\\CaculateService.cs",
-              "RelativeDocumentMoniker": "shopAPI\\Services\\CaculateService.cs",
-              "ToolTip": "E:\\intern\\E-Shop\\shopAPI\\shopAPI\\Services\\CaculateService.cs",
-              "RelativeToolTip": "shopAPI\\Services\\CaculateService.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T16:44:16.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "ShopContext.cs",
               "DocumentMoniker": "E:\\intern\\E-Shop\\shopAPI\\shopAPI\\Data\\ShopContext.cs",
               "RelativeDocumentMoniker": "shopAPI\\Data\\ShopContext.cs",
               "ToolTip": "E:\\intern\\E-Shop\\shopAPI\\shopAPI\\Data\\ShopContext.cs",
               "RelativeToolTip": "shopAPI\\Data\\ShopContext.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAABAwBQAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAuwBQAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T16:40:05.87Z"
+              "WhenOpened": "2025-12-06T16:40:05.87Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ProductController.cs",
               "DocumentMoniker": "E:\\intern\\E-Shop\\shopAPI\\shopAPI\\Controllers\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "shopAPI\\Controllers\\Controllers\\ProductController.cs",
@@ -139,11 +123,12 @@
               "RelativeToolTip": "shopAPI\\Controllers\\Controllers\\ProductController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T16:38:23.89Z"
+              "WhenOpened": "2025-12-06T16:38:23.89Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "ICategoryRepository.cs",
               "DocumentMoniker": "E:\\intern\\E-Shop\\shopAPI\\shopAPI\\Data\\Repositories\\Interfaces\\ICategoryRepository.cs",
               "RelativeDocumentMoniker": "shopAPI\\Data\\Repositories\\Interfaces\\ICategoryRepository.cs",
@@ -151,11 +136,12 @@
               "RelativeToolTip": "shopAPI\\Data\\Repositories\\Interfaces\\ICategoryRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T09:45:28.249Z"
+              "WhenOpened": "2025-11-27T09:45:28.249Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Customer.cs",
               "DocumentMoniker": "E:\\intern\\E-Shop\\shopAPI\\shopAPI\\Models\\Entities\\Customer.cs",
               "RelativeDocumentMoniker": "shopAPI\\Models\\Entities\\Customer.cs",
@@ -163,11 +149,12 @@
               "RelativeToolTip": "shopAPI\\Models\\Entities\\Customer.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T09:02:00.821Z"
+              "WhenOpened": "2025-11-27T09:02:00.821Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Product.cs",
               "DocumentMoniker": "E:\\intern\\E-Shop\\shopAPI\\shopAPI\\Models\\Entities\\Product.cs",
               "RelativeDocumentMoniker": "shopAPI\\Models\\Entities\\Product.cs",
@@ -175,11 +162,12 @@
               "RelativeToolTip": "shopAPI\\Models\\Entities\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T07:34:44.457Z"
+              "WhenOpened": "2025-12-04T07:34:44.457Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "OrderController.cs",
               "DocumentMoniker": "E:\\intern\\E-Shop\\shopAPI\\shopAPI\\Controllers\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "shopAPI\\Controllers\\Controllers\\OrderController.cs",
@@ -187,11 +175,12 @@
               "RelativeToolTip": "shopAPI\\Controllers\\Controllers\\OrderController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T15:26:07.158Z"
+              "WhenOpened": "2025-12-06T15:26:07.158Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "OrderRepository.cs",
               "DocumentMoniker": "E:\\intern\\E-Shop\\shopAPI\\shopAPI\\Data\\Repositories\\OrderRepository.cs",
               "RelativeDocumentMoniker": "shopAPI\\Data\\Repositories\\OrderRepository.cs",
@@ -199,11 +188,12 @@
               "RelativeToolTip": "shopAPI\\Data\\Repositories\\OrderRepository.cs",
               "ViewState": "AgIAACQAAAAAAAAAAIA9wDIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T16:01:56.46Z"
+              "WhenOpened": "2025-12-06T16:01:56.46Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "ProductModel.cs",
               "DocumentMoniker": "E:\\intern\\E-Shop\\shopAPI\\shopAPI\\Models\\ApiModels\\ProductModel.cs",
               "RelativeDocumentMoniker": "shopAPI\\Models\\ApiModels\\ProductModel.cs",
@@ -211,11 +201,12 @@
               "RelativeToolTip": "shopAPI\\Models\\ApiModels\\ProductModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T07:39:41.734Z"
+              "WhenOpened": "2025-12-04T07:39:41.734Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "OrderItemRepository.cs",
               "DocumentMoniker": "E:\\intern\\E-Shop\\shopAPI\\shopAPI\\Data\\Repositories\\OrderItemRepository.cs",
               "RelativeDocumentMoniker": "shopAPI\\Data\\Repositories\\OrderItemRepository.cs",
@@ -223,11 +214,12 @@
               "RelativeToolTip": "shopAPI\\Data\\Repositories\\OrderItemRepository.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAIBAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T16:22:03.504Z"
+              "WhenOpened": "2025-12-06T16:22:03.504Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "CategoryRepository.cs",
               "DocumentMoniker": "E:\\intern\\E-Shop\\shopAPI\\shopAPI\\Data\\Repositories\\CategoryRepository.cs",
               "RelativeDocumentMoniker": "shopAPI\\Data\\Repositories\\CategoryRepository.cs",
@@ -235,11 +227,12 @@
               "RelativeToolTip": "shopAPI\\Data\\Repositories\\CategoryRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T16:01:45.437Z"
+              "WhenOpened": "2025-12-06T16:01:45.437Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "IProductService.cs",
               "DocumentMoniker": "E:\\intern\\E-Shop\\shopAPI\\shopAPI\\Services\\Interface\\IProductService.cs",
               "RelativeDocumentMoniker": "shopAPI\\Services\\Interface\\IProductService.cs",
@@ -247,11 +240,12 @@
               "RelativeToolTip": "shopAPI\\Services\\Interface\\IProductService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T05:59:55.181Z"
+              "WhenOpened": "2025-11-26T05:59:55.181Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": ".editorconfig",
               "DocumentMoniker": "E:\\intern\\E-Shop\\shopAPI\\.editorconfig",
               "RelativeDocumentMoniker": ".editorconfig",
@@ -259,11 +253,12 @@
               "RelativeToolTip": ".editorconfig",
               "ViewState": "AgIAAMEAAAAAAAAAAAAAAPoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-06T15:03:44.127Z"
+              "WhenOpened": "2025-12-06T15:03:44.127Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "IServicelifetime.cs",
               "DocumentMoniker": "E:\\intern\\E-Shop\\shopAPI\\shopAPI\\Services\\Interface\\IServicelifetime.cs",
               "RelativeDocumentMoniker": "shopAPI\\Services\\Interface\\IServicelifetime.cs",
@@ -271,7 +266,8 @@
               "RelativeToolTip": "shopAPI\\Services\\Interface\\IServicelifetime.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T09:04:06.729Z"
+              "WhenOpened": "2025-12-04T09:04:06.729Z",
+              "EditorCaption": ""
             }
           ]
         }
